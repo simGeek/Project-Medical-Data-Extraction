@@ -2,7 +2,8 @@
 
 Skills used:
 1. Python
-2. Computer Vision
+2. Regular expressions (Basic Natural Language processing)
+3. Computer Vision
 
 Description:
 1. The aim of this project is to extract meaningful information from medical documents, hence minimizing manual work.
