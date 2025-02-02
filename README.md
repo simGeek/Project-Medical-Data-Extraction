@@ -18,7 +18,7 @@ PDF to Image Conversion
 
 OCR (Optical Character Recognition) for Text Extraction
 
-Pattern Recognition with NLP & Regex
+Pattern Recognition with Regex
 
 5. Role & Tasks
    
