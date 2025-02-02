@@ -17,6 +17,7 @@ Hospitals often need to extract information for tasks like insurance claims and 
 PDF to Image Conversion
 
 OCR (Optical Character Recognition) for Text Extraction
+
 Pattern Recognition with NLP & Regex
 
 5. Role & Tasks
