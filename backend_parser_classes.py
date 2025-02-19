@@ -1,5 +1,5 @@
 import re  # Import the regular expression module for pattern matching
-from home.p1_parser_generic import MedicalDocParser  # Import the base parser class
+from home.parser_generic import MedicalDocParser  # Import the base parser class
 
 # Define a parser for prescription documents
 class PrescriptionParser(MedicalDocParser):
