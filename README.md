@@ -1,59 +1,21 @@
-# Project-Medical-Data-Extraction
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+`PROJECT-MEDICAL-DATA-EXTRACTION`
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 
-1. Context & Importance
-   
-Developed a Medical Data Extraction system to automate the process of extracting useful information from medical documents in PDF format.
+1️⃣WHAT IT DOES?
 
-📌 Why is it important?
+2️⃣WHY IT MATTERS?
 
-Hospitals often need to extract information for tasks like insurance claims and record management. Manual extraction is time-consuming and error-prone, so automation can significantly improve efficiency.
+3️⃣TECH STACK?
 
-3. Technologies Used
-   
-🛠 Tech Stack: Python, Regular Expressions (basic NLP), Computer Vision
+4️⃣LIBRARIES USED?
 
-🔍 Key Methods:
-
-PDF to Image Conversion
-
-OCR (Optical Character Recognition) for Text Extraction
-
-Pattern Recognition with Regex
-
-5. Role & Tasks
-   
-Implemented:
-
-✅ PDF to Image Conversion for better processing
-
-✅ OCR & Text Processing to extract meaningful data
-
-✅ Custom Rule-Based Extraction to handle different document structures
-
-7. Challenges & Solutions
-   
-⚡ Challenge: Different PDFs had unique structures, making consistent extraction difficult.   
-
-   -> Prescription
-   
-   -> Patient Details
-   
-   -> Vaccination Record
-   
-   -> Medical History
-   
-💡 Solution: Developed custom processing for each document type to ensure accuracy.
-
-9. Impact & Results
-    
-🚀 Automated the process, reducing manual effort by 80%
-
-⚡ Cut down data extraction time by 95%
-
-💰 Lowered operational costs by reducing manual labor
+5️⃣HOW IT RUNS?
 
 
-PROJECT IMAGES:
+
+
+6️⃣PROJECT IMAGES:
 
 ![p1-1](https://github.com/user-attachments/assets/1712c051-0631-4cb9-8e37-b664e65152c2)
 ![p1-2](https://github.com/user-attachments/assets/b2533be9-3f04-452f-9ecc-d61cefb3dd0b)
