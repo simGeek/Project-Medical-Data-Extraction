@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         try {
             const csrfToken = getCookie('csrftoken');  // Get CSRF token from the cookie
-            const response = await fetch('/p1_uploadextract/', {
+            const response = await fetch('/uploadextract/', {
                 method: 'POST',
                 body: formData,  // Sending form data as body for file upload and file format
                 headers: {
