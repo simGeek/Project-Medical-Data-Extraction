@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <title>HomePage</title> <!-- Title of the webpage as seen in the browser tab -->
+
+    <!-- Link to the external CSS file hosted on S3 -->
+    <link rel="stylesheet" href="{% static 'css/style_project1.css' %}">
+</head>
+<body style="background: radial-gradient(circle, #FFFACD, #FFFFFF);"> <!-- Sets the background of the page to a radial gradient from light yellow to white -->
+    <h1 class="centered-element">
+        Medical Data Extraction Project
+    </h1>
+    <h2 class="centered-element1">
+        Download Sample PDF files
+    </h2>
+    <div class="boxc">
+        <!-- Links for downloading sample files -->
+        <a id="downloadFile1" href="{% static 'download_files/pre.pdf' %}" class="files">Prescription File</a> <!-- Link to download the Prescription File (href="#" is a placeholder) -->
+        <a id="downloadFile2" href="{% static 'download_files/pd.pdf' %}" class="files">Patient Details File</a> <!-- Link to download the Patient Details File (href="#" is a placeholder) -->
+        <a id="downloadFile3" href="{% static 'download_files/vr.pdf' %}" class="files">Vaccination Record File</a> <!-- Link to download the Vaccination Record File (href="#" is a placeholder) -->
+        <a id="downloadFile4" href="{% static 'download_files/mh.pdf' %}" class="files">Medical History File</a> <!-- Link to download the Medical History File (href="#" is a placeholder) -->
+    </div>
+    <a href="/project1" class="back">Back</a> <!-- Link to navigate back to the previous project page -->
+</body>
+</html>
