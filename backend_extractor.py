@@ -1,7 +1,7 @@
 from pdf2image import convert_from_path
 import pytesseract
-import home.p1_util as p1_util
-from home.p1_parser_classes import PrescriptionParser, PatientDetailsParser, MhParser, VrParser
+import home.util as util
+from home.parser_classes import PrescriptionParser, PatientDetailsParser, MhParser, VrParser
 
 def extract_prescription(file_path, file_format):
     """
@@ -18,7 +18,7 @@ def extract_prescription(file_path, file_format):
         # Process the first page
         page = pages[0]
         # Preprocess the image for better OCR results
-        processed_image = p1_util.preprocess_pres_pd(page)
+        processed_image = util.preprocess_pres_pd(page)
         # Extract text from the image using Tesseract
         text = pytesseract.image_to_string(processed_image, lang='eng')
         document_text = '\n' + text
@@ -44,7 +44,7 @@ def extract_patient_details(file_path, file_format):
         # Process the first page
         page = pages[0]
         # Preprocess the image for better OCR results
-        processed_image = p1_util.preprocess_pres_pd(page)
+        processed_image = util.preprocess_pres_pd(page)
         # Extract text from the image using Tesseract
         text = pytesseract.image_to_string(processed_image, lang='eng')
         document_text = '\n' + text
@@ -70,7 +70,7 @@ def extract_vaccination(file_path, file_format):
         # Process the first page
         page = pages[0]
         # Preprocess the image for better OCR results
-        processed_image = p1_util.preprocess_vr(page)
+        processed_image = util.preprocess_vr(page)
         # Extract text from the image using Tesseract
         text = pytesseract.image_to_string(processed_image, lang='eng')
         document_text = '\n' + text
@@ -96,7 +96,7 @@ def extract_medical(file_path, file_format):
         # Process the first page
         page = pages[0]
         # Preprocess the image for better OCR results
-        im1, imn, im3, im4, im5, im6, im7, im8, im9 = p1_util.preprocess_mh(page)
+        im1, imn, im3, im4, im5, im6, im7, im8, im9 = util.preprocess_mh(page)
         # Extract text from each preprocessed image using Tesseract
         text1 = pytesseract.image_to_string(im1, lang='eng')
         text2 = pytesseract.image_to_string(imn, lang='eng')
