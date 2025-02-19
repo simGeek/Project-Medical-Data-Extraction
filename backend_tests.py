@@ -1,5 +1,5 @@
 import pytest  # Import the pytest library, a testing framework for Python
-from home.p1_parser_classes import PrescriptionParser, PatientDetailsParser, MhParser, VrParser
+from home.parser_classes import PrescriptionParser, PatientDetailsParser, MhParser, VrParser
 
 # Define a fixture to provide a PatientDetailsParser object for tests
 @pytest.fixture()
