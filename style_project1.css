@@ -1,0 +1,334 @@
+/* For Desktop/Laptop Screen (1920X1080) */
+
+/* Ensure that html and body elements use full height */
+html, body {
+  max-height: 100%; /* Prevent the height from exceeding 100% of the viewport */
+  max-width: 100%;
+}
+
+/* Set the background of the body to a radial gradient */
+body {
+  background: radial-gradient(circle, #FFFACD, #FFFFFF); /* Light yellow to white gradient for a soft background */
+}
+
+/* Centered text elements with specific margins and font styles */
+.centered-element {
+  margin-top: 4%; /* Space from the top of the viewport */
+  text-align: center; /* Center-align text horizontally */
+  color: black; /* Set text color to black for contrast */
+  font-family: "Lucida Console", "Courier New", monospace; /* Use a monospace font 
+  for a retro look; fallbacks also provided */
+}
+
+.centered-element1 {
+  margin-top: 5%; /* Space from the top of the viewport */
+  text-align: center; /* Center-align text horizontally */
+  color: black; /* Set text color to black */
+  font-family: "Lucida Console", "Courier New", monospace; /* Font family for consistency */
+}
+
+/* Styling for the box containing download links */
+.boxc {
+  margin-top: 5%; /* Space from the top of the viewport */
+  text-align: center; /* Center-align content within the box */
+  margin-left: 35%; /* Space from the left side of the viewport */
+  height: 197px; /* Set a fixed height for the box */
+  width: 30%; /* Set a fixed width for the box */
+  border: 2px solid black; /* Black border with 2px width for visibility */
+}
+
+/* Difference between block level and inline level elements:
+BLOCK - Always start on a new line, taking up the full width of their container.
+They force the next element to start on a new line.
+INLINE - Do not start on a new line; they flow within the same line as their neighboring content.
+Only take up as much width as their content requires.
+*/
+
+/* Styling for the back button */
+.back {
+  margin-top: 5%; /* Space from the top of the viewport */
+  margin-left: 46%; /* Center the button horizontally */
+  height: 20px; /* Set a fixed height for the button */
+  width: 50px; /* Set a fixed width for the button */
+  border: 2px solid black; /* Black border with 2px width for clarity */
+  display: block; /* Display as a block element */
+  margin-bottom: 10px; /* Space below the button */
+  text-decoration: none; /* Remove underline from text */
+  transition: font-weight 0.3s; /* Smooth transition for font-weight change */
+  background-color: #1967d2; /* Semi-transparent blue background for a modern look */
+  color: #FFFACD; /* Text color for readability */
+  text-align: center; /* Center-align text within the button */
+  padding: 12px 12px; /* Padding inside the button for better touch target */
+}
+
+/* Styling for file download links */
+.files {
+  display: block; /* Display as block element for stacking */
+  margin-bottom: 10px; /* Space below each link for separation */
+  text-decoration: none; /* Remove underline from text */
+  transition: font-weight 0.3s; /* Smooth transition for font-weight change */
+  background-color: #1967d2; /* Semi-transparent blue background */
+  color: #FFFACD; /* Text color for clarity */
+  text-align: center; /* Center-align text within the link */
+  padding: 12px 12px; /* Padding for better touch target */
+}
+
+/* Hover effect for download links and back button */
+.files:hover, .back:hover {
+  color: #FFFACD; /* Change text color to light yellow on hover for contrast */
+  background-color: black; /* Change background color to black on hover for visibility */
+  font-weight: bolder; /* Make text bold on hover for emphasis; 
+  transition should not be applied here because it will not be smooth otherwise */
+}
+
+/* Container for aligning boxes centrally */
+.boxes {
+  margin-top: 5%; /* Space from the top of the viewport */
+  align-items: center; /* Center-align items vertically */
+  text-align: center; /* Center-align text horizontally */
+}
+
+/* Styling for box elements */
+.box, .box2 {
+  position: relative; /* Position relative to enable absolute positioning of child elements */
+  width: 29%; /* Set width of the boxes */
+  height: 280px; /* Set height of the boxes */
+  border: 2px solid black; /* Black border with 2px width for definition */
+}
+/*
+POSITION VALUES:
+1 - static: Elements are positioned according to the normal document flow.
+Top, right, bottom, and left properties do not affect static elements.
+2 - relative: Elements remain in the normal document flow but can be offset using top, 
+right, bottom, and left. The space the element occupies in the document flow remains 
+unchanged.
+3 - absolute: The element is removed from the normal document flow and positioned 
+relative to the nearest positioned ancestor (an ancestor with relative, absolute, 
+or fixed positioning). If no positioned ancestor exists, it is positioned relative to 
+the <html> (root element).
+4 - fixed: The element is removed from the normal document flow and positioned 
+relative to the viewport (the visible portion of the browser window).
+ It does not move when the page is scrolled.
+5 - sticky: It toggles between relative and fixed:
+Acts as relative until the scroll position reaches a threshold.
+Behaves like fixed once it hits the threshold.
+*/
+
+/* Center-align and size the 'Back To Projects' button */
+.style_buttonn {
+  margin-top: 3%; /* Space from the top of the viewport */
+  margin-left: 48%;
+  align-items:center;
+text-align:center;
+text-decoration: none;
+line-height: 40px;
+height: 40px;
+width: 50px;
+}
+
+/* Positioning for the style_button1 inside .box */
+.box .style_button1 {
+  position: absolute; /* Use absolute positioning for precise placement */
+  bottom: 0; /* Align to the bottom of the box */
+  left: 0; /* Align to the left side of the box */
+ width: 200px; /* Set width for the button */
+text-decoration: none;
+line-height: 40px;
+height: 40px;
+align-items:center;
+text-align:center;
+}
+
+.box2 .oops {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1px; /* Space between buttons */
+  bottom: 0;
+  right: 0;
+}
+
+.style_button2 {
+  width: 200px; /* Set width for the button */
+line-height: 40px;
+height: 40px;
+align-items:center;
+text-align:center;
+}
+
+/* Positioning for the .box element */
+.box {
+  margin-left: 20%; /* Space from the left side of the viewport */
+  float: left; /* Float the element to the left for layout */
+}
+/*
+float: left(floats to the left and other content wraps around at the right side),
+right(floats to the right of the container and other content wraps at the left),
+none(normal document flow),
+inherit(inherits the float of its parent);
+*/
+
+/* Positioning for the .box2 element */
+.box2 {
+  margin-left: 53%; /* Space from the left side of the viewport */
+}
+
+/* Styling for specific elements */
+.element1 {
+  float: left; /* Float the element to the left for layout */
+  width: 100%; /* Full width for the element */
+  padding: 5px; /* Padding inside the element */
+  margin-top: 10px; /* Space from the top */
+  margin-left: 5px; /* Space from the left */
+  color: black; /* Text color */
+  font-family: "Lucida Console", "Courier New", monospace; /* Consistent font family */
+}
+
+/* Margin adjustments for the file input element */
+.element4 {
+  margin-top: 10%; /* Space from the top */
+  margin-left: 30%; /* Space from the left */
+}
+
+/* Button spacing in button-box */
+.button-box button:first-child {
+  margin-right: 10px; /* Space to the right of the first button */
+}
+
+.button-box button:last-child {
+  margin-left: 344.7px; /* Space to the left of the last button */
+}
+
+/* Styling for result key */
+.result-key {
+  font-weight: bold; /* Make text bold for emphasis */
+  color: black; /* Text color */
+}
+
+/* Styling for result value */
+.result-value { /* Space to the left of the value */
+  color: black; /* Text color */
+}
+
+/* Common styling for various buttons and elements */
+.style_button1, .style_button2, #dropdown_id, .style_buttonn {
+  
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    border: 0;
+                    color: #FFFACD;
+                    background: #000a47;
+                    font-size: 16px;
+}
+
+/* Hover effects for buttons and dropdown */
+.style_button1:hover, .style_button2:hover, #dropdown_id:hover, #dropdown_id option:hover, .style_buttonn:hover {
+transition: all .1s ease;
+box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1967d2;
+}
+
+/* Container styling */
+.container {
+  height: 150px; /* Set fixed height for the container */
+  width: 350px; /* Set fixed width for the container */
+  margin-left: 30px; /* Margin around the container for spacing */
+  border-width: 0px; /* No border width */
+  text-align: left;
+}
+
+/* Styling for result message */
+.res {
+  color: black; /* Text color for result messages */
+  margin: 8px 70px 20px 83px; /* Margin around the element for spacing */
+  font-family: "Lucida Console", "Courier New", monospace; /* Font family for consistency */
+}
+
+/* Margin for message element */
+.message {
+  margin-left: 50px; /* Space from the left */
+}
+
+/* Styling for dropdown element */
+.drop {
+  margin-top: 3px; /* Space from the top */
+  margin-left: 5px; /* Space from the left */
+  height: 50px; /* Set height for the dropdown */
+  width: 220px; /* Set width for the dropdown */
+align-items:center;
+text-align:center;
+}
+
+/* Responsive design adjustments for screens smaller than 1024px wide */
+@media (max-width: 1024px) {
+  .centered-element {
+    margin-top: 10%; /* Adjusted margin-top for smaller screens */
+  }
+
+  .centered-element1 {
+    margin-top: 40%; /* Adjusted margin-top for smaller screens */
+    text-align: center; /* Center-align text */
+    color: black; /* Text color */
+    font-family: "Lucida Console", "Courier New", monospace; /* Consistent font family */
+  }
+
+  .boxc {
+    margin-top: 15%; /* Adjusted margin-top for smaller screens */
+    text-align: center; /* Center-align content */
+    margin-left: 35%; /* Space from the left side of the viewport */
+    height: 197px; /* Maintain height */
+    width: 30%; /* Maintain width */
+    border: 2px solid black; /* Black border for definition */
+  }
+
+  .back {
+    margin-top: 10%; /* Adjusted margin-top for smaller screens */
+    margin-left: 44%; /* Center the button horizontally */
+    height: 20px; /* Maintain height */
+    width: 100px; /* Maintain width */
+    border: 2px solid black; /* Maintain black border */
+    display: block; /* Maintain block display */
+    margin-bottom: 10px; /* Space below the button */
+    text-decoration: none; /* Remove underline */
+    transition: font-weight 0.3s; /* Smooth transition for font-weight change */
+    background-color: #1980D280; /* Maintain background color */
+    color: black; /* Maintain text color */
+    text-align: center; /* Center-align text */
+    padding: 12px 12px; /* Padding for touch target */
+  }
+
+  .boxes {
+    flex-direction: column; /* Arrange items in a column layout for smaller screens */
+    align-items: center; /* Center-align items vertically */
+  }
+
+  .box, .box2 {
+    width: 50%; /* Adjust width to fit better on smaller screens */
+    margin-left: 25%; /* Center-align boxes */
+  }
+
+  .box {
+    float: none; /* Remove float to ensure proper stacking */
+    margin-top: 30%; /* Adjusted margin-top for smaller screens */
+  }
+
+  .box2 {
+    margin-top: 10%; /* Adjusted margin-top for smaller screens */
+  }
+
+  .element4 {
+    margin-left: 0; /* Reset margin-left for better alignment */
+    margin-top: 5%; /* Adjusted margin-top for spacing */
+  }
+
+  .style_buttonn {
+    margin-left: 43%; /* Center-align the 'Back To Projects' button */
+  }
+
+  .container {
+    width: 90%; /* Adjust container width for smaller screens */
+    margin: 10px auto; /* top and bottom to 10px and center container horizontally */
+  }
+}
