@@ -4,7 +4,7 @@ from home import views  # Importing views from the home application to link to s
 
 # Defining URL patterns for the home application.
 urlpatterns = [
-    path("data_extract", views.data_extract, name='data_extract'),  # URL for Project 1.
+    path('', views.data_extract, name='data_extract'),  # URL for Project 1.
     path("sample_download", views.sample_download, name='sample_download'),
     
     # Paths related to Project 1 functionalities, handling uploads and data extraction.
