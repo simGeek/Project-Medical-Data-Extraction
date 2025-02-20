@@ -19,21 +19,27 @@ Solves the problem of manual data retrieval from patient files during insurance 
 4️⃣ LIBRARIES USED [See 'requirements.txt' for specific versions]
 
 🔹 Web Development – Django, ASGIRef, Jinja2, MarkupSafe
+
 ✔️ (Django framework + async support + secure templating)
 
 🔹 Data Handling & Analysis – NumPy, pandas, python-dateutil, pytz, PyYAML
+
 ✔️ (For numerical operations, structured data processing, time handling, and YAML configuration)
 
 🔹 Natural Language Processing (NLP) – NLTK, pytesseract
+
 ✔️ (For text processing and Optical Character Recognition (OCR))
 
 🔹 Image & PDF Processing – OpenCV, Pillow, pdf2image
+
 ✔️ (For working with images, PDFs, and conversions)
 
 🔹 Networking & API Requests – Requests
+
 ✔️ (For making HTTP requests)
 
 🔹 Utility & Formatting – Rich, SQLParse, tqdm
+
 ✔️ (For better console output, SQL parsing, and progress tracking)
 
 5️⃣ WORKFLOW
@@ -51,8 +57,10 @@ Solves the problem of manual data retrieval from patient files during insurance 
 6️⃣ INSTALLATION (with VS Code)
 
 🔹Install:
-    VS Code (https://code.visualstudio.com/download)
-    Python (https://www.python.org/downloads/)
+
+VS Code (https://code.visualstudio.com/download)
+    
+Python (https://www.python.org/downloads/)
 
 🔹Open VS Code
 
@@ -63,17 +71,24 @@ Solves the problem of manual data retrieval from patient files during insurance 
 🔹Open Terminal > New Terminal
 
 🔹Run following commands:
-    python -m venv venv
-    venv\Scripts\activate
-    pip install -r requirements.txt
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
 
 🔹Click on 'Release-24.02.0-0.zip' after going to 'https://github.com/oschwartz10612/poppler-windows/releases/tag/v24.02.0-0' on browser.
+
   Click on 'tesseract-ocr-w64-setup-5.5.0.20241111.exe' after going to 'https://github.com/UB-Mannheim/tesseract/wiki' on browser.
+  
   Install both inside C drive.
 
 🔹Run following commands:
-    django-admin startproject my_project
-    python manage.py startapp home
+
+django-admin startproject my_project
+
+python manage.py startapp home
     
 🔹Delete 'views.py' from 'home'; cut and paste 'urls.py' and 'views.py' from the cloned files to 'home'
 
@@ -84,35 +99,53 @@ Solves the problem of manual data retrieval from patient files during insurance 
 🔹Create folder 'pdf_files' in 'media'
 
 🔹Cut and paste the following to the respective folders:
-      .html files --> templates
-      .css files --> css inside static
-      .js files --> js inside static
-      .pdf files --> download_files inside static
-      .py files --> home (except manage.py)
+
+  .html files --> templates
+  
+  .css files --> css inside static
+  
+  .js files --> js inside static
+  
+  .pdf files --> download_files inside static
+  
+  .py files --> home (except manage.py)
 
 🔹Add the following in settings.py inside my_project:
-      import os
-      STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-      MEDIA_URL = '/media/'
-      MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-      PDF_FILES_UPLOAD_DIR = 'media/pdf_files/'
+
+  import os
+  
+  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+  
+  MEDIA_URL = '/media/'
+  
+  MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+  
+  PDF_FILES_UPLOAD_DIR = 'media/pdf_files/'
 
 🔹Inside settings.py --> 'INSTALLED_APPS', include 'home'
 
 🔹Inside settings.py --> 'TEMPLATES', paste 'os.path.join(BASE_DIR, 'templates')' in DIRS = [**PASTE HERE**]
 
 🔹Add in 'my_project' --> 'urls.py',
-        from django.contrib import admin
-        from django.urls import path, include
-        from django.conf import settings
-        from django.conf.urls.static import static
-        urlpatterns = [
-          path('admin/', admin.site.urls),
-          path('', include('home.urls')), 
-        
-  ]
-        if settings.DEBUG:
-            urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+from django.contrib import admin
+
+from django.urls import path, include
+
+from django.conf import settings
+
+from django.conf.urls.static import static
+
+urlpatterns = [
+
+  path('admin/', admin.site.urls),
+  
+  path('', include('home.urls')), 
+
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
@@ -131,10 +164,15 @@ Solves the problem of manual data retrieval from patient files during insurance 
 8️⃣ KEY LEARNINGS
 
 🔹PDF Processing Requires Flexibility 
+
 🔹Thresholding Techniques Impact OCR Accuracy
+
 🔹Preprocessing Enhances Text Extraction
+
 🔹Region of Interest (ROI) Improves Precision
+
 🔹Iterative Refinement is Crucial
+
 🔹There is always room for improvement
 
 9️⃣ DEPLOYED PROJECT IMAGES
