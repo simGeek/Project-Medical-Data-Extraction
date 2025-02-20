@@ -3,6 +3,9 @@ import pytesseract
 import home.util as util
 from home.parser_classes import PrescriptionParser, PatientDetailsParser, MhParser, VrParser
 
+POPPLER_PATH = r'C:\poppler-24.02.0\Library\bin'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Tesseract-OCR\tesseract.exe'
+
 def extract_prescription(file_path, file_format):
     """
     Extracts prescription data from a PDF file.
@@ -11,7 +14,7 @@ def extract_prescription(file_path, file_format):
     :return: Extracted prescription data.
     """
     # Convert the first page of the PDF file to an image
-    pages = convert_from_path(file_path)
+    pages = convert_from_path(file_path, poppler_path=POPPLER_PATH)
     document_text = ''
 
     if len(pages) > 0:
@@ -37,7 +40,7 @@ def extract_patient_details(file_path, file_format):
     :return: Extracted patient details.
     """
     # Convert the first page of the PDF file to an image
-    pages = convert_from_path(file_path)
+    pages = convert_from_path(file_path, poppler_path=POPPLER_PATH)
     document_text = ''
 
     if len(pages) > 0:
@@ -63,7 +66,7 @@ def extract_vaccination(file_path, file_format):
     :return: Extracted vaccination data.
     """
     # Convert the first page of the PDF file to an image
-    pages = convert_from_path(file_path)
+    pages = convert_from_path(file_path, poppler_path=POPPLER_PATH)
     document_text = ''
 
     if len(pages) > 0:
@@ -90,7 +93,7 @@ def extract_medical(file_path, file_format):
     :raises Exception: If the document format is invalid (no pages found).
     """
     # Convert the first page of the PDF file to an image
-    pages = convert_from_path(file_path)
+    pages = convert_from_path(file_path, poppler_path=POPPLER_PATH)
 
     if len(pages) > 0:
         # Process the first page
