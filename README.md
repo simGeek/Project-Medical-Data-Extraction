@@ -12,11 +12,29 @@ Solves the problem of manual data retrieval from patient files during insurance 
 
 🔹Frontend: HTML, JS, CSS
 
-🔹Backend: Python, Django
+🔹Backend: Python, Django, Computer Vision, Regular Expressions 
 
 🔹Infrastructure: AWS
 
 4️⃣ LIBRARIES USED [See 'requirements.txt' for specific versions]
+
+🔹 Web Development – Django, ASGIRef, Jinja2, MarkupSafe
+✔️ (Django framework + async support + secure templating)
+
+🔹 Data Handling & Analysis – NumPy, pandas, python-dateutil, pytz, PyYAML
+✔️ (For numerical operations, structured data processing, time handling, and YAML configuration)
+
+🔹 Natural Language Processing (NLP) – NLTK, pytesseract
+✔️ (For text processing and Optical Character Recognition (OCR))
+
+🔹 Image & PDF Processing – OpenCV, Pillow, pdf2image
+✔️ (For working with images, PDFs, and conversions)
+
+🔹 Networking & API Requests – Requests
+✔️ (For making HTTP requests)
+
+🔹 Utility & Formatting – Rich, SQLParse, tqdm
+✔️ (For better console output, SQL parsing, and progress tracking)
 
 5️⃣ WORKFLOW
 
@@ -102,9 +120,24 @@ Solves the problem of manual data retrieval from patient files during insurance 
     
 7️⃣ CHALLENGES
 
+🔹 Handling Diverse PDF Structures – Each PDF file had a unique format, requiring custom processing approaches and containing text in different alignments and orientations.
+
+🔹 Choosing the Right Thresholding Technique – When extracting text from images, deciding between adaptive and simple thresholding was crucial. Different PDFs required different preprocessing techniques to enhance OCR accuracy.
+
+🔹 Image Splitting for Better Processing – In certain cases, a single extracted image needed to be split into multiple images to improve text extraction quality.
+
+🔹Defining Regions of Interest (ROI) – To accurately extract relevant text, computer vision techniques were applied to define specific regions of interest within images, avoiding unnecessary noise and improving OCR precision.
+
 8️⃣ KEY LEARNINGS
 
-9️⃣ PROJECT IMAGES
+🔹PDF Processing Requires Flexibility 
+🔹Thresholding Techniques Impact OCR Accuracy
+🔹Preprocessing Enhances Text Extraction
+🔹Region of Interest (ROI) Improves Precision
+🔹Iterative Refinement is Crucial
+🔹There is always room for improvement
+
+9️⃣ DEPLOYED PROJECT IMAGES
 
 ![p1-1](https://github.com/user-attachments/assets/1712c051-0631-4cb9-8e37-b664e65152c2)
 
