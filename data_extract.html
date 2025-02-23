@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1 class="centered-element">
+    Medical Data Extraction
+</h1>
+<div class="boxes">
+    <div class="box">
+        <h3 class="element1">Patient's file type:</h3>
+        <select class="drop" name="dropdown_name" id="dropdown_id">
+            <option value="pre">Prescription</option>
+            <option value="pd">Patient Details</option>
+            <option value="vr">Vaccination Record</option>
+            <option value="mh">Medical History</option>
+        </select>
+        
+        <input class="element4" type="file" id="file-upload" name="file" accept="application/pdf" required>
+        <div class="message" id="uploadMessage"></div>
+        <a href="/sample_download" class="style_button1">Download Sample Files</a>
+    </div>
+    <div class="box2">
+        <h2 class="res">Result</h2>
+        <div class="parent-container">
+        <span class="containerkey" id="extractionResultkey"></span>
+        <span class="containervalue" id="extractionResultvalue"></span></div>
+<div class="oops">
+	<button class="style_button2" id="uploadextractButton">Upload and Extract</button>
+    </div>
+</div>
+</div>
+
+<script src="{% static 'js/data_extract.js' %}"></script>
+</body>
+</html>
