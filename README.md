@@ -149,6 +149,8 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+🔹Make sure to save all the changes.
+
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
 🔹Run 'python manage.py runserver' in the VS Code terminal
