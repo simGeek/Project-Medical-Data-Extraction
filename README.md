@@ -88,6 +88,8 @@ pip install -r requirements.txt
 
 django-admin startproject my_project
 
+cd my_project
+
 python manage.py startapp home
     
 🔹Delete 'views.py' from 'home'; cut and paste 'urls.py' and 'views.py' from the cloned files to 'home'
