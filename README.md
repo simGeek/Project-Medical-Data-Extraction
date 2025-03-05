@@ -112,7 +112,7 @@ python manage.py startapp home
   
   .py files --> home (except manage.py)
 
-🔹Add the following in settings.py inside my_project:
+🔹Add the following in settings.py inside inner 'my_project':
 
   import os
   
