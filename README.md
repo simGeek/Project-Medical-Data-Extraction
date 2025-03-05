@@ -94,7 +94,7 @@ python manage.py startapp home
     
 🔹Delete 'views.py' from 'home'; cut and paste 'urls.py' and 'views.py' from the cloned files to 'home'
 
-🔹Create new folders inside the 'project-medical-data-extraction' named 'templates', 'static' and 'media'
+🔹Create new folders inside the outer 'my_project' named 'templates', 'static' and 'media'
 
 🔹Create new folders named 'js', 'css' and 'download_files' inside 'static'
 
