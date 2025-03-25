@@ -1,6 +1,6 @@
 🔹PROJECT-MEDICAL-DATA-EXTRACTION🔹
 
-🔹LINKEDIN POST🔹
+◽LINKEDIN POST◽
 
 https://www.linkedin.com/feed/update/urn:li:activity:7300049038358278144/
 
