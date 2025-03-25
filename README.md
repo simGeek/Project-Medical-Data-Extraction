@@ -1,5 +1,8 @@
 🔹PROJECT-MEDICAL-DATA-EXTRACTION🔹
 
+🔹LINKEDIN POST🔹
+https://www.linkedin.com/feed/update/urn:li:activity:7300049038358278144/
+
 1️⃣ PURPOSE 
 
 To extract useful information from the medical pdf documents.
