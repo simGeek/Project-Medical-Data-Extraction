@@ -116,7 +116,7 @@ python manage.py startapp home
 
 🔹Inside settings.py --> 'TEMPLATES', paste 'os.path.join(BASE_DIR, 'templates')' in DIRS = [**PASTE HERE**]
 
-🔹Add in inner 'my_project' --> 'urls.py',
+🔹Add in inner 'my_project' --> 'urls.py' (remove everything there and add this),
 
 from django.contrib import admin
 
