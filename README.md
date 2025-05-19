@@ -137,7 +137,9 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-🔹Make sure to save all the changes.
+🔹Make sure to save all the changes by ctrl + s on all modified files.
+
+🔹Press ctrl + shift + p --> reload windows to ensure that all changes are saved after installing packages.
 
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
