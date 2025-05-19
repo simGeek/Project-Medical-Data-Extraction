@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
   Click on 'tesseract-ocr-w64-setup-5.5.0.20241111.exe' after going to 'https://github.com/UB-Mannheim/tesseract/wiki' on browser.
   
-  Install both inside C drive.
+  Install both inside C drive (strictly directly).
 
 🔹Run following commands:
 
