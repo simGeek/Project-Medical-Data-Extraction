@@ -144,6 +144,8 @@ if settings.DEBUG:
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
 🔹Run 'python manage.py runserver' in the VS Code terminal
+
+🔹Copy and paste the given link from the output terminal (http://127.0.0.1:8000/) in the browser
     
 7️⃣ CHALLENGES
 
