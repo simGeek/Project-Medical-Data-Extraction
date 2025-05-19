@@ -4,8 +4,10 @@ from django.shortcuts import render
 from django.conf import settings
 from django.http import JsonResponse
 from django.core.files.storage import FileSystemStorage
+from django.views.decorators.csrf import ensure_csrf_cookie
 from home.extractor import extract_prescription, extract_patient_details, extract_medical, extract_vaccination
 
+@ensure_csrf_cookie
 def data_extract(request):
     return render(request, "data_extract.html")
 
@@ -13,6 +15,7 @@ def sample_download(request):
     return render(request, "sample_download.html")  
 
 def uploadextract(request):
+    print("Request method received:", request.method)
     if request.method == 'POST':
         # Check if 'file' exists in request.FILES
         if 'file' not in request.FILES:
