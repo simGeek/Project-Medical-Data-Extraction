@@ -22,29 +22,13 @@ Solves the problem of manual data retrieval from patient files during insurance 
 
 4️⃣ LIBRARIES USED [See 'requirements.txt' for specific versions]
 
-🔹 Web Development – Django, ASGIRef, Jinja2, MarkupSafe
+🔹 Web Development – Django
 
-✔️ (Django framework + async support + secure templating)
+🔹 Data Handling & Analysis – NumPy
 
-🔹 Data Handling & Analysis – NumPy, pandas, python-dateutil, pytz, PyYAML
+🔹 Natural Language Processing (NLP) – pytesseract
 
-✔️ (For numerical operations, structured data processing, time handling, and YAML configuration)
-
-🔹 Natural Language Processing (NLP) – NLTK, pytesseract
-
-✔️ (For text processing and Optical Character Recognition (OCR))
-
-🔹 Image & PDF Processing – OpenCV, Pillow, pdf2image
-
-✔️ (For working with images, PDFs, and conversions)
-
-🔹 Networking & API Requests – Requests
-
-✔️ (For making HTTP requests)
-
-🔹 Utility & Formatting – Rich, SQLParse, tqdm
-
-✔️ (For better console output, SQL parsing, and progress tracking)
+🔹 Image & PDF Processing – OpenCV, pdf2image
 
 5️⃣ WORKFLOW
 
