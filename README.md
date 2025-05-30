@@ -50,6 +50,8 @@ VS Code (https://code.visualstudio.com/download)
     
 Python (https://www.python.org/downloads/)
 
+Make sure to add it in the path
+
 🔹Open VS Code
 
 🔹Click on 'Clone Git Repository' and paste 'https://github.com/simGeek/Project-Medical-Data-Extraction.git' in the space prompted for the git url
